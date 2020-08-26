@@ -1,0 +1,38 @@
+.psinfo {
+    background: #f2f2f2;
+    border:solid #f2f2f2;
+    border-radius: 8px;
+    
+}
+
+input#fn, input#ln {
+    width: 96%;
+    padding: 20px;
+    margin-left: 20px;
+    
+}
+
+select#pv {
+    width: 98%;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+input#sm {
+    width: 20%;
+    padding: 20px;
+    color: white;
+    background-color: #00cc00;
+    border:#00cc00;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+p#fPd {
+    padding: 20px;
+}
+.psinfo input#sm:hover {
+    cursor: pointer;
+    background: #008800;
+    color:white;
+}
