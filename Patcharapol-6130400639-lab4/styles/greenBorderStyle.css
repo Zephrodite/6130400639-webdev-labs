@@ -1,0 +1,16 @@
+h1 {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    background-color: lightskyblue;
+    
+    
+}
+p#prg {
+    border: 10px solid green;
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(215, 255, 219);
+
+}

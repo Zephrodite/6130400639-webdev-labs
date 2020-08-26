@@ -1,0 +1,25 @@
+h1 {
+    font-size: 50px;
+}
+
+p#redir {
+    margin-left: 162px;
+}
+
+table, th, td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  
+}
+th#yltb, td#yltb {
+    background-color: yellow;
+}
+
+th#rtb, td#rtb {
+    background-color: red;
+}
+
+td#stL, td#rtb, td#yltb {
+    text-align: right;
+}
