@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loading Students Information</h1>
+
+    <ol></ol>
+    <script>
+        var display = document.body.querySelector('ol');
+        var url = 'students.json';
+
+        fetch(url).then(response => {
+            return response.json() ;
+        }).then(data => {
+            wclass = data.wclass
+            for(var person of wclass) {
+                var list = document.createElement('li');
+                list.innerHTML +=
+                person.student["@attributes"].id  + " " + "<b>" +
+                person.student.name +  "</b>"  + " has skills " + "<i>" +
+                person.student.skill + "</i>"  ;
+                display.appendChild(list);
+            };
+        });
+    </script>
+</body>
+</html>

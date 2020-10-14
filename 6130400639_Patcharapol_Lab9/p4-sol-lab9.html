@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ol></ol>
+
+    <script>
+        var display = document.body.querySelector('ol');
+        var url = 'places.json';
+
+        fetch(url).then(response => {
+            return response.json() ;
+        }).then(data => {
+            results = data.results
+            for(var info of results) {
+                var list = document.createElement('li');
+                list.innerHTML += "<span style = 'color: blue;'>" + "name = " + info.name + "<br>" + "</span>" + 
+                "<span style = 'color: green;'>" + "location = " + info.geometry.location.lat + " " + info.geometry.location.lng
+                + "</span>";
+                
+                display.appendChild(list);
+            };
+        });
+    </script>
+</body>
+</html>

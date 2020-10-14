@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shopping list example</title>
+  <style>
+    li {
+      margin-bottom: 10px;
+    }
+
+    li button {
+      font-size: 8px;
+      margin-left: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My shopping list</h1>
+
+  <div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" id="item">
+    <button onclick="getText()">Add item</button>
+  </div>
+
+  <ul>
+
+  </ul>
+
+  <script>
+    var lileng = [];
+    var display = document.body.querySelector('ul');
+    var para = document.createElement("p");
+    function getText() {
+
+      var inputtext = document.getElementById("item").value;
+      var list = document.createElement('li');
+      lileng.push(inputtext);
+      list.innerHTML += inputtext + ' <button onclick="Delete(this);">Delete</button> </li>' ;
+      display.appendChild(list);
+      countItems();
+
+
+    }
+    function Delete(currentEl) {
+      currentEl.parentNode.parentNode.removeChild(currentEl.parentNode);
+      lileng.pop();
+      if (lileng == 0) {
+        countItems();
+      }else {
+        countItems();
+      }
+     
+     
+    }
+    function countItems() {
+      if (lileng.length == 0) {
+        para.innerHTML = " ";
+        document.body.appendChild(para);
+      } else if(lileng.length > 1 ) {
+        para.innerHTML =  "The list has " + lileng.length + " items";
+        document.body.appendChild(para);
+      }else {
+        para.innerHTML =  "The list has " + lileng.length + " item";
+        document.body.appendChild(para);
+      }
+     
+     
+    }
+  </script>
+</body>
+
+</html>
