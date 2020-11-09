@@ -1,0 +1,3 @@
+1.เป็นการเรียกใช้ google calendar api ในการสร้าง  event ที่เราต้องการนัดหมายเพื่อ insert เข้าไปใน google calendar และสามารถนำมาดูได้ว่าวันนี้ๆเราเรียนหรือมีธุระกับใครอย่างไรบ้าง
+2.หากมีนัดแล้วในระยะเวลานั้นๆ เมื่อรัน node jsfile จะแสดงขึ้นใน console เป็น Sorry I'm busy แต่หาก insert event ที่ต้องการสำเร็จจะขึ้นบน console ว่า  Calendar event successfully created.
+3.สามารถกำหนดวันที่ และเวลาได้ตามต้องการ
