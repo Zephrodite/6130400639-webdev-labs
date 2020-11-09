@@ -1,0 +1,14 @@
+{
+  "name": "initgooglecalendarapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zephrodite",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^64.0.0"
+  }
+}
