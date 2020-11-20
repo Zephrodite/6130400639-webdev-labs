@@ -1,0 +1,23 @@
+html 
+    head 
+        title Student Form
+    body 
+        h1(style="text-align:center;") Student Form
+        form(action = "/schedule", method = "POST")
+            table
+                tr
+                    td
+                        label(for = "name") Name:
+                    td
+                        input(name = "name"  value = "Patcharapol")
+                tr
+                    td
+                        label(for="internship") Internship company:
+                    td
+                        input(name = "internship" value = "Digio Thailand")
+                tr
+                    td
+                        label(for="skills") Skills:
+                    td
+                        input(name = "skills" value = "HTML, CSS, Javascript")
+            button(type = "submit" ) Submit

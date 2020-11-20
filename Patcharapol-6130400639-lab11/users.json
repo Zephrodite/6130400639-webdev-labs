@@ -1,0 +1,20 @@
+{
+    "user1": {
+        "name":"Patcharapol",
+        "profession":"student",
+        "hobbies":"lsitening to songs",
+        "id":1
+    },
+    "user2": {
+        "name":"Einstien",
+        "profession":"teacher",
+        "hobbies":"reading",
+        "id":2
+    },
+    "user3": {
+        "name":"Albert",
+        "profession":"athlete",
+        "hobbies":"running",
+        "id":3
+    }
+}

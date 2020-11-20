@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remaining schedule</title>
+</head>
+
+<body>
+    <h1> Remaining schedule </h1>
+    <form action="/schedule" method="POST">
+
+        <caption>19-11-2020 K'Roof's talk</caption>
+
+        <br>
+
+        <input type="text" value="27-11-2020" id="date" placeholder="date"> </input>
+
+        <input type="text" value="Final Exam" id="task" placeholder="task"> </input>
+
+        <button id="sm" type="submit">Submit</button>
+
+    </form>
+    <h2>Tasks</h2>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        var lileng = [];
+        var display = document.body.querySelector('ul');
+        function getText() {
+            var inputtext = document.getElementById("date").value + " :" + document.getElementById("task").value;
+            var list = document.createElement('li');
+            lileng.push(inputtext);
+            list.innerHTML += inputtext;
+            display.appendChild(list);
+        }
+
+        document.getElementById("sm").addEventListener("click", getText);
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title=name
+    body
+        h1: a(href = profile_url, target = "_blank") #{name}
+        img(src = "/avatar.png", alt="Avatr Image", width="250", height="auto")
+        
+        h2="Internship companies"
+        ul
+            li: a(href = company1, target = "_blank") #{company1_name} 
+            li: a(href = company2, target = "_blank") #{company2_name} 
+            li: a(href = company3, target = "_blank") #{company3_name} 
+        .ul
